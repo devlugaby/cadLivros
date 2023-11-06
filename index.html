@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual</title>
+</head>
+<body>
+
+    <h1>Gerenciamento de Livros</h1>
+    <div id="cadastro">
+        <h2>Gerenciar Livros</h2>
+        <form id="cadastroForm">
+            <label for="name">Descrição:</label>
+            <input type="text" id="desc" name="desc" required><br>
+
+            <label for="isdn">ISDN:</label>
+            <input type="text" id="isdn" name="isdn" required><br>
+
+            <button class="glow-on-hover" type="submit">📚Salvar</button>
+            <button class="glow-on-hover" type="button" onclick="atualizarLivro()">🔄Atualizar</button>
+            <button class="glow-on-hover" type="button" onclick="deletarLivro()">❌Deletar</button>
+        </form>
+    </div>
+
+    <div id="pesquisa">
+        <h2>Pesquisar Livros</h2>
+        <form id="pesquisaForm">
+            <label for="searchId">ID do Livro:</label>
+            <input type="text" id="searchId" name="searchId"><br>
+            <button class="glow-on-hover" type="button" onclick="pesquisarLivro()">🔍Pesquisar</button>
+        </form>
+        <div id="resultadoPesquisa"></div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
